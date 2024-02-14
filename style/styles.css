@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 217, 217);
+}
+
+.main_page {
+  width: auto;
+  height: 70%;
+  background-color: white;
+  display: flex;
+}
+
+.search {
+  height: 30px;
+}
+
+.burger {
+  height: 300px;
+}
+
+.main_page {
+  display: flex;
+}
+
+main {
+  display: flex;
+}

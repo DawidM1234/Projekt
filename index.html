@@ -5,140 +5,186 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/7.0.0/normalize.css "
+    />
+    <link rel="stylesheet" href="style/styles.css" />
   </head>
   <body>
-    <aside>
-      <button>
-        <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="menu icon" />
-      </button>
-      <img
-        src="./assets/icons/211817_search_strong_icon.svg"
-        alt="search icon"
-      />
-    </aside>
-    <main>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>Products</li>
-          <li>Recipes</li>
-          <li>About</li>
-        </ul>
-        <button type="button">Log in</button>
-        <button>Sign up</button>
-      </nav>
-      <div class="main">
-        <div class="main_offer">
-          <div class="kcal">
-            <p>472</p>
-            <p>kcal</p>
-          </div>
-          <img src="" alt="Classic Burger" />
-          <h2>Classic Burger</h2>
-          <div class="macros">
-            <span class="macro">Fat-26g</span>
-            <span class="macro">saturates-10g</span>
-            <span class="macro">sugars-18g</span>
-            <span class="macro">salt-1g</span>
-          </div>
-          <p class="info"></p>
-          <div class="order">
-            <div class="quantity">
-              <button>-</button>
-              <span>0</span>
-              <button>+</button>
-            </div>
-            <span class="price">$16</span>
-            <button class="place_order">
-              <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="" />
-              <span>Add to cart</span>
-            </button>
-          </div>
-        </div>
-        <div class="other_offers">
-          <div class="offer">
+    <div class="main_page">
+      <aside>
+        <img
+          src="./assets/icons/211817_search_strong_icon.svg"
+          alt="search icon"
+          class="search"
+        />
+        <button>
+          <img
+            src="./assets/icons/9110893_menu_dots_icon.svg"
+            alt="menu icon"
+          />
+        </button>
+      </aside>
+      <main>
+        <nav>
+          <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Recipes</li>
+            <li>About</li>
+          </ul>
+          <button type="button">Log in</button>
+          <button>Sign up</button>
+        </nav>
+        <div class="main">
+          <div class="main_offer">
             <div class="kcal">
-              <p>326</p>
+              <p>472</p>
               <p>kcal</p>
             </div>
-            <img src="" alt="Double Burger" />
-            <h3>Double Burger</h3>
+            <img
+              src="assets/images/classic-burger.png"
+              alt="Classic Burger"
+              class="burger"
+            />
+            <h2>Classic Burger</h2>
+            <div class="macros">
+              <span class="macro">Fat-26g</span>
+              <span class="macro">saturates-10g</span>
+              <span class="macro">sugars-18g</span>
+              <span class="macro">salt-1g</span>
+            </div>
             <p class="info"></p>
+            <div class="order">
+              <div class="quantity">
+                <button>-</button>
+                <span>0</span>
+                <button>+</button>
+              </div>
+              <span class="price">$16</span>
+              <button class="place_order">
+                <img
+                  src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+                <span>Add to cart</span>
+              </button>
+            </div>
+          </div>
+          <div class="other_offers">
+            <div class="offer">
+              <div class="kcal">
+                <p>326</p>
+                <p>kcal</p>
+              </div>
+              <img
+                src="assets/images/double-burger.png"
+                alt="Double Burger"
+                class="burger"
+              />
+              <h3>Double Burger</h3>
+              <p class="info"></p>
 
-            <div class="order">
-              <div class="quantity">
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
+              <div class="order">
+                <div class="quantity">
+                  <button>-</button>
+                  <span>0</span>
+                  <button>+</button>
+                </div>
+                <span class="price">$16</span>
+                <button class="place_order">
+                  <img
+                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </button>
               </div>
-              <span class="price">$16</span>
-              <button class="place_order">
-                <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="" />
-              </button>
             </div>
-          </div>
-          <div class="offer">
-            <div class="kcal">
-              <p>218</p>
-              <p>kcal</p>
-            </div>
-            <img src="" alt="Green Burger" />
-            <h3>Green Burgerr</h3>
-            <p class="info"></p>
-            <div class="order">
-              <div class="quantity">
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
+            <div class="offer">
+              <div class="kcal">
+                <p>218</p>
+                <p>kcal</p>
               </div>
-              <span class="price">$16</span>
-              <button class="place_order">
-                <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="offer">
-            <div class="kcal">
-              <p>280</p>
-              <p>kcal</p>
-            </div>
-            <img src="" alt="Taj Chili Burger" />
-            <h3>Taj Chili Burger</h3>
-            <p class="info"></p>
-            <div class="order">
-              <div class="quantity">
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
+              <img
+                src="assets/images/green-burger.png"
+                alt="Green Burger"
+                class="burger"
+              />
+              <h3>Green Burger</h3>
+              <p class="info"></p>
+              <div class="order">
+                <div class="quantity">
+                  <button>-</button>
+                  <span>0</span>
+                  <button>+</button>
+                </div>
+                <span class="price">$16</span>
+                <button class="place_order">
+                  <img
+                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </button>
               </div>
-              <span class="price">$16</span>
-              <button class="place_order">
-                <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="" />
-              </button>
             </div>
-          </div>
-          <div class="offer">
-            <div class="kcal">
-              <p>312</p>
-              <p>kcal</p>
-            </div>
-            <img src="" alt="Healthy Burger" />
-            <h3>ealthy Burger</h3>
-            <p class="info"></p>
-            <div class="order">
-              <div class="quantity">
-                <button>-</button>
-                <span>0</span>
-                <button>+</button>
+            <div class="offer">
+              <div class="kcal">
+                <p>280</p>
+                <p>kcal</p>
               </div>
-              <span class="price">$16</span>
-              <button class="place_order">
-                <img src="./assets/icons/9110893_menu_dots_icon.svg" alt="" />
-              </button>
+              <img
+                src="assets/images/red-burger.png"
+                alt="Taj Chili Burger"
+                class="burger"
+              />
+              <h3>Taj Chili Burger</h3>
+              <p class="info"></p>
+              <div class="order">
+                <div class="quantity">
+                  <button>-</button>
+                  <span>0</span>
+                  <button>+</button>
+                </div>
+                <span class="price">$16</span>
+                <button class="place_order">
+                  <img
+                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="offer">
+              <div class="kcal">
+                <p>312</p>
+                <p>kcal</p>
+              </div>
+              <img
+                src="assets/images/healthy-burger.png"
+                alt="Healthy Burger"
+                class="burger"
+              />
+              <h3>ealthy Burger</h3>
+              <p class="info"></p>
+              <div class="order">
+                <div class="quantity">
+                  <button>-</button>
+                  <span>0</span>
+                  <button>+</button>
+                </div>
+                <span class="price">$16</span>
+                <button class="place_order">
+                  <img
+                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                    alt=""
+                  />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
