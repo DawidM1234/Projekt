@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/reset.css" />
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/7.0.0/normalize.css "
@@ -12,32 +11,35 @@
     <link rel="stylesheet" href="style/styles.css" />
   </head>
   <body>
-    <div class="main_page">
-      <aside>
+    <aside>
+      <img
+        src="./assets/icons/211817_search_strong_icon.svg"
+        alt="search icon"
+        class="search"
+      />
+      <button>
         <img
-          src="./assets/icons/211817_search_strong_icon.svg"
-          alt="search icon"
-          class="search"
+          src="./assets/icons/9110893_menu_dots_icon.svg"
+          alt="menu icon"
+          class="menu"
         />
-        <button>
-          <img
-            src="./assets/icons/9110893_menu_dots_icon.svg"
-            alt="menu icon"
-          />
-        </button>
-      </aside>
-      <main>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Products</li>
-            <li>Recipes</li>
-            <li>About</li>
-          </ul>
-          <button type="button">Log in</button>
+      </button>
+    </aside>
+    <main>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Recipes</li>
+          <li>About</li>
+        </ul>
+        <div class="buttons">
+          <button>Log in</button>
           <button>Sign up</button>
-        </nav>
-        <div class="main">
+        </div>
+      </nav>
+      <div class="main">
+        <div class="offerContainer">
           <div class="main_offer">
             <div class="kcal">
               <p>472</p>
@@ -46,7 +48,7 @@
             <img
               src="assets/images/classic-burger.png"
               alt="Classic Burger"
-              class="burger"
+              class="main_burger"
             />
             <h2>Classic Burger</h2>
             <div class="macros">
@@ -55,12 +57,17 @@
               <span class="macro">sugars-18g</span>
               <span class="macro">salt-1g</span>
             </div>
-            <p class="info"></p>
+            <p class="info">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+              natus possimus nihil perferendis non dolorem a quos ipsum, vitae
+              corporis, est sint atque ut dolor omnis perspiciatis quia aliquam
+              autem.
+            </p>
             <div class="order">
               <div class="quantity">
-                <button>-</button>
+                <span>-</span>
                 <span>0</span>
-                <button>+</button>
+                <span>+</span>
               </div>
               <span class="price">$16</span>
               <button class="place_order">
@@ -72,119 +79,139 @@
               </button>
             </div>
           </div>
-          <div class="other_offers">
-            <div class="offer">
-              <div class="kcal">
-                <p>326</p>
-                <p>kcal</p>
-              </div>
-              <img
-                src="assets/images/double-burger.png"
-                alt="Double Burger"
-                class="burger"
-              />
-              <h3>Double Burger</h3>
-              <p class="info"></p>
+        </div>
+        <div class="other_offers">
+          <div class="offer">
+            <div class="kcal">
+              <p>326</p>
+              <p>kcal</p>
+            </div>
+            <img
+              src="assets/images/double-burger.png"
+              alt="Double Burger"
+              class="burger"
+            />
+            <h3>Double Burger</h3>
+            <p class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+              qui doloribus, odit amet fugit voluptas voluptatibus totam esse et
+              expedita ipsam quas consectetur minus officiis suscipit pariatur,
+              repellat rerum at.
+            </p>
 
-              <div class="order">
-                <div class="quantity">
-                  <button>-</button>
-                  <span>0</span>
-                  <button>+</button>
-                </div>
-                <span class="price">$16</span>
-                <button class="place_order">
-                  <img
-                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                </button>
+            <div class="order">
+              <div class="quantity">
+                <span>-</span>
+                <span>0</span>
+                <span>+</span>
               </div>
+              <span class="price">$16</span>
+              <button class="place_order">
+                <img
+                  src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </button>
             </div>
-            <div class="offer">
-              <div class="kcal">
-                <p>218</p>
-                <p>kcal</p>
-              </div>
-              <img
-                src="assets/images/green-burger.png"
-                alt="Green Burger"
-                class="burger"
-              />
-              <h3>Green Burger</h3>
-              <p class="info"></p>
-              <div class="order">
-                <div class="quantity">
-                  <button>-</button>
-                  <span>0</span>
-                  <button>+</button>
-                </div>
-                <span class="price">$16</span>
-                <button class="place_order">
-                  <img
-                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
+          </div>
+          <div class="offer">
+            <div class="kcal">
+              <p>218</p>
+              <p>kcal</p>
             </div>
-            <div class="offer">
-              <div class="kcal">
-                <p>280</p>
-                <p>kcal</p>
+            <img
+              src="assets/images/green-burger.png"
+              alt="Green Burger"
+              class="burger"
+            />
+            <h3>Green Burger</h3>
+            <p class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ab
+              qui. Eligendi, quia, officiis nostrum ex repellendus corporis
+              asperiores tempore eaque quod praesentium consectetur itaque
+              quibusdam incidunt earum voluptates vel.
+            </p>
+            <div class="order">
+              <div class="quantity">
+                <span>-</span>
+                <span>0</span>
+                <span>+</span>
               </div>
-              <img
-                src="assets/images/red-burger.png"
-                alt="Taj Chili Burger"
-                class="burger"
-              />
-              <h3>Taj Chili Burger</h3>
-              <p class="info"></p>
-              <div class="order">
-                <div class="quantity">
-                  <button>-</button>
-                  <span>0</span>
-                  <button>+</button>
-                </div>
-                <span class="price">$16</span>
-                <button class="place_order">
-                  <img
-                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                </button>
-              </div>
+              <span class="price">$16</span>
+              <button class="place_order">
+                <img
+                  src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </button>
             </div>
-            <div class="offer">
-              <div class="kcal">
-                <p>312</p>
-                <p>kcal</p>
+          </div>
+          <div class="offer">
+            <div class="kcal">
+              <p>280</p>
+              <p>kcal</p>
+            </div>
+            <img
+              src="assets/images/red-burger.png"
+              alt="Taj Chili Burger"
+              class="burger"
+            />
+            <h3>Taj Chili Burger</h3>
+            <p class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates doloribus quasi qui unde, itaque ducimus velit hic
+              pariatur minus quia distinctio esse vel officia tempora cumque
+              incidunt et, magnam aut?
+            </p>
+            <div class="order">
+              <div class="quantity">
+                <span>-</span>
+                <span>0</span>
+                <span>+</span>
               </div>
-              <img
-                src="assets/images/healthy-burger.png"
-                alt="Healthy Burger"
-                class="burger"
-              />
-              <h3>ealthy Burger</h3>
-              <p class="info"></p>
-              <div class="order">
-                <div class="quantity">
-                  <button>-</button>
-                  <span>0</span>
-                  <button>+</button>
-                </div>
-                <span class="price">$16</span>
-                <button class="place_order">
-                  <img
-                    src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
-                    alt=""
-                  />
-                </button>
+              <span class="price">$16</span>
+              <button class="place_order">
+                <img
+                  src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="offer">
+            <div class="kcal">
+              <p>312</p>
+              <p>kcal</p>
+            </div>
+            <img
+              src="assets/images/healthy-burger.png"
+              alt="Healthy Burger"
+              class="burger"
+            />
+            <h3>Healthy Burger</h3>
+            <p class="info">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+              deserunt consectetur libero ab sunt eligendi et est commodi hic
+              unde possimus impedit animi modi incidunt, nostrum provident minus
+              laudantium repudiandae!
+            </p>
+            <div class="order">
+              <div class="quantity">
+                <span>-</span>
+                <span>0</span>
+                <span>+</span>
               </div>
+              <span class="price">$16</span>
+              <button class="place_order">
+                <img
+                  src="./assets/icons/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt=""
+                />
+              </button>
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>

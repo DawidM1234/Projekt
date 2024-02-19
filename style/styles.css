@@ -1,29 +1,173 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(221, 217, 217);
+:root {
+  --border-color: rgb(177, 177, 177);
 }
 
-.main_page {
-  width: auto;
-  height: 70%;
-  background-color: white;
+body {
   display: flex;
+  background-color: white;
 }
 
 .search {
   height: 30px;
 }
 
-.burger {
-  height: 300px;
+.menu {
+  flex: 1;
 }
 
-.main_page {
-  display: flex;
+.burger {
+  height: 70%;
 }
 
 main {
   display: flex;
+  flex-direction: column;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  width: 95vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.offerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem;
+}
+
+.main_offer {
+  border: solid var(--border-color) 1px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  align-items: center;
+  height: 70vh;
+  position: relative;
+  border-radius: 15px;
+  padding: 1.15rem;
+}
+
+.macros {
+  display: flex;
+  gap: 1rem;
+}
+
+.macro {
+  border: solid var(--border-color) 0.5px;
+  padding: 0.25rem;
+  border-radius: 10px;
+}
+
+.kcal {
+  border: solid var(--border-color) 0.5px;
+  border-radius: 100%;
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.75rem;
+  padding: 3px;
+}
+
+.main_burger {
+  width: 70%;
+}
+
+p {
+  color: rgb(112, 109, 109);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+}
+
+.order {
+  display: flex;
+}
+
+.quantity {
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.other_offers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26vw;
+  position: relative;
+  border: solid var(--border-color) 1px;
+  border-radius: 10px;
+  height: 45vh;
+  background-color: rgb(236, 233, 233);
+}
+
+.offer > img {
+  width: 45%;
+  height: 45%;
+}
+
+.order {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.order > .quantity {
+  background-color: rgb(214, 214, 214);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  border-radius: 15px;
+}
+
+.order > .quantity > span {
+  color: rgb(13, 184, 13);
+  font-size: 1.15rem;
+}
+
+.order > .quantity > :nth-child(2) {
+  color: black;
+}
+
+.place_order {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(0, 181, 0);
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(221, 224, 221);
 }
