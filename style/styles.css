@@ -3,14 +3,24 @@
   --clickable-colour: #e4eee9;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
 }
 
+button {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 .search {
   height: 30px;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .menu {
@@ -19,6 +29,7 @@ body {
   padding: 0.75rem;
   border-radius: 10px;
   margin: 1rem;
+  cursor: pointer;
 }
 
 .burger {
@@ -89,6 +100,7 @@ ul {
   position: relative;
   border-radius: 15px;
   padding: 1.15rem;
+  transition: 1s;
 }
 
 .macros {
@@ -163,6 +175,7 @@ p {
   border-radius: 40px;
   height: 45vh;
   background-color: #f9f7f5;
+  transition: 1s;
 }
 
 .offer > img {
@@ -188,10 +201,12 @@ p {
 .order > .quantity > span {
   color: rgb(13, 184, 13);
   font-size: 1.15rem;
+  cursor: pointer;
 }
 
 .order > .quantity > :nth-child(2) {
   color: black;
+  cursor: auto;
 }
 
 .place_order {
