@@ -5,6 +5,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -18,13 +19,13 @@ button {
 }
 
 .search {
-  height: 30px;
+  height: 1.9rem;
   margin: 1rem;
   cursor: pointer;
 }
 
 .menu {
-  height: 30px;
+  height: 1.9rem;
   background-color: #f0f0f0;
   padding: 0.75rem;
   border-radius: 10px;
@@ -50,8 +51,7 @@ aside {
 
 nav {
   display: flex;
-  width: 95vw;
-  justify-content: space-between;
+  width: 91vw;
   align-items: center;
   margin-bottom: 0.5rem;
 }
@@ -81,6 +81,7 @@ ul {
   display: flex;
   gap: 2rem;
   list-style: none;
+  flex: 1;
 }
 
 .offerContainer {
@@ -94,9 +95,8 @@ ul {
   border: solid var(--border-color) 1px;
   display: flex;
   flex-direction: column;
-  width: 30vw;
   align-items: center;
-  height: 70vh;
+  height: 75vh;
   position: relative;
   border-radius: 15px;
   padding: 1.15rem;
@@ -126,7 +126,7 @@ ul {
 }
 
 .kcal > p {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 
 .main_burger {
@@ -148,8 +148,20 @@ p {
   display: flex;
 }
 
-.quantity {
-  flex: 1;
+.main_offer > .order > .quantity {
+  padding: 1rem;
+}
+
+.main_offer > .order > .quantity > span {
+  font-size: 1.3rem;
+}
+
+.main_offer > .kcal > p {
+  font-size: 1rem;
+}
+
+.main_offer > .info {
+  font-size: 1.3rem;
 }
 
 .price {
@@ -178,8 +190,7 @@ p {
 }
 
 .offer > img {
-  width: 30%;
-  height: 30%;
+  height: 40%;
 }
 
 .order {
@@ -195,6 +206,7 @@ p {
   display: flex;
   gap: 0.5rem;
   border-radius: 15px;
+  flex: 1;
 }
 
 .order > .quantity > span {

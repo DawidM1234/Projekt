@@ -1,0 +1,26 @@
+@media only screen and (max-width: 762px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main_offer {
+    margin: 0;
+  }
+
+  nav {
+    gap: 10rem;
+  }
+
+  .buttons {
+    flex: 1;
+  }
+
+  .offer {
+    padding: 4rem;
+  }
+
+  .offer > .img {
+    height: 50%;
+    margin-top: 0;
+  }
+}
