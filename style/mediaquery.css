@@ -1,26 +1,68 @@
 @media only screen and (max-width: 762px) {
   .main {
     flex-direction: column;
+    width: 80vw;
   }
 
-  .main_offer {
-    margin: 0;
+  aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: none;
   }
 
-  nav {
-    gap: 10rem;
+  .main_offer > img {
+    width: 50%;
+  }
+
+  ul {
+    flex: 1;
+    margin-right: 8vw;
+  }
+
+  a:nth-child(4) {
+    display: none;
   }
 
   .buttons {
     flex: 1;
   }
 
-  .offer {
-    padding: 4rem;
+  .other_offers {
+    gap: 0.2rem;
   }
 
-  .offer > .img {
-    height: 50%;
+  .offer {
+    padding: 3rem;
+    gap: 2rem;
+    width: auto;
+  }
+
+  .offer > img {
+    height: 70%;
     margin-top: 0;
+  }
+
+  .offer > .info {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .main_offer {
+    width: 50vw;
+  }
+
+  .main_offer > img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .offer {
+    height: 50vh;
   }
 }
